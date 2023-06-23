@@ -26,7 +26,7 @@ mapCanvas = document.getElementById("game");
 ctxMap = mapCanvas.getContext("2d");                
 ```
 
-Коррдинат положения и начальные знаения задаются в конструкторе функции `Player()`     
+Координаты положения и начальные значения задаются в конструкторе функции `Player()`     
 ```
 this.srcX = 0;                      
     this.srcY = 0;                      
@@ -59,7 +59,7 @@ this.addMp = function(saze){
         this.mp = 100;             
 }
 ```
-Функция перменешия игрока по координате Х
+Функция перемещения игрока по координате Х
 ```
 this.moveLeft = function(){
     if(!this.isDie){
