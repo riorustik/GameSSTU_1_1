@@ -76,15 +76,15 @@ this.moveLeft = function(){
 ```
 Функции отрисовки спрайта игрока при хотьбе
 ```
-Player.prototype.draw = function(){                                             // функция для обьекта Player
-    clearCtxPlayer();                                                           // функция передающая отчистку экрана (задана ниже)
-    this.srcX = (this.srcX === 300 ? 0 : this.srcX + 60);                       // уравнение обновления кадра (проверяем дошел ли Х до придела и возвращаем Х в начальную позицию)
-    if(this.isRight)                                                                  // условие для выполнения отрисовки кадра при r=1 через функцию chekKeyDown
-        persR.drawImage(gamerR, this.srcX, this.srcY, this.width, this.height,  // задание кординат для конкретного изображение (коррекция изображения если оно большое )
-        this.drawX, this.drawY, this.width, this.height);                       // (двигать изображение по экрану)
-    if(this.isLeft)                                                                  // условие для выполнения отрисовки кадра при r=2 через функцию chekKeyDown
-        persL.drawImage(gamerL, this.srcX, this.srcY, this.width, this.height,  // задание кординат для конкретного изображение (коррекция изображения если оно большое )
-            this.drawX, this.drawY, this.width, this.height);                   // (двигать изображение по экрану)
+Player.prototype.draw = function(){                                             
+    clearCtxPlayer();                                                          
+    this.srcX = (this.srcX === 300 ? 0 : this.srcX + 60);                       
+    if(this.isRight)                                                                 
+        persR.drawImage(gamerR, this.srcX, this.srcY, this.width, this.height,  
+        this.drawX, this.drawY, this.width, this.height);                       
+    if(this.isLeft)                                                                  
+        persL.drawImage(gamerL, this.srcX, this.srcY, this.width, this.height,  
+            this.drawX, this.drawY, this.width, this.height);                   
 }   
 ```
 
