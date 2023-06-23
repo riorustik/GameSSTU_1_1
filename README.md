@@ -9,10 +9,10 @@
   <dd>
     <dl>
       <dd>
-        <h3><a href="https://riorustik.github.io/GameSSTU_1_1/">GitHub Pages</a></h3>
+        <h3><a href="https://riorustik.github.io/GameSSTU_1_1/">GitHub Pages</a></h3> :octocat:
       </dd>
     </dl>
   </dd>
 </dl> 
 
-:octocat:
+
