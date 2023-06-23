@@ -20,6 +20,8 @@
 Для взоимодействия с полотном сanvas необходимо найти элемент `<Canvas>` по "id" и взоимодействовать с ним через переменную, обьявив тип взоимодействия.
 
 ```
+<canvas id="game"></canvas>
+
 mapCanvas = document.getElementById("game");           
 ctxMap = mapCanvas.getContext("2d");                
 ```
