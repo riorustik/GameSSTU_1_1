@@ -87,4 +87,26 @@ Player.prototype.draw = function(){
             this.drawX, this.drawY, this.width, this.height);                   
 }   
 ```
-
+Функция взоимодействия через клавиши
+```
+function chekKeyDown(e){                        
+    var keyID = e.keyCode || e.which;           
+    var keyChar = String.fromCharCode(keyID);  
+    if(keyChar == "X"){  
+        e.preventDefault();
+        player.moveRight();
+    }
+    if(keyChar == "Z"){                        
+        e.preventDefault();        
+        player.moveLeft();              
+    }
+    if(keyChar == "N"){                         
+        e.preventDefault();                     
+        player.shout();
+    }
+    if(keyChar == "M"){                         
+        e.preventDefault();                     
+        player.hit();
+    }
+}
+```
